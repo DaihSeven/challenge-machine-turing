@@ -78,7 +78,7 @@ Para organizar o desenvolvimento, foi criado um **esquema visual no draw.io**, c
 - Checklist final  
 
 <p align="center">
-  <img src="images/org-maquinaturing.jpg" alt="Organização do projeto Máquina de Turing"/>
+  <img src="images/org-maquinaTuring.jpg" alt="Organização do projeto Máquina de Turing"/>
 </p>
 
 ---
