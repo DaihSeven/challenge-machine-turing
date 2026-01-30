@@ -1,15 +1,3 @@
-/**
- * 3° VERSÃO => Processamento sequencial
- * sequencia → resultados
- * lê símbolo > aplica regra > move para frente
- * Análise: processamento sequencial direto, reduz o uso de memória(O(n/3)) e aproxima a implementação do modelo conceitual da Máquina de Turing, onde leitura e execução ocorrem de forma linear sobre a fita.
- * Usa destructuring direto, leitura e execução acontecem juntas, som armazenamento em bloco e loop único;
- * Escálavel, reutilizável e testável
- * fita → array de entrada
- * cabeça de leitura → índice
- * regras → objeto de operações
- * estado → resultado gerado
- */
 const regras = {
     "+": (a, b) => a + b,
     "-": (a, b) => a - b,
