@@ -1,11 +1,10 @@
 {
   "name": "challenge-machine-turing",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.jindex.js",
+  "description": "Este projeto representa a fase inicial da trilha focada em lógica e algoritmos.",
+  "main": "src/turinmachine.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/turingmachine.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,6 @@
   "bugs": {
     "url": "https://github.com/DaihSeven/challenge-machine-turing/issues"
   },
-  "homepage": "https://github.com/DaihSeven/challenge-machine-turing#readme",
-  "dependencies": {
-    "express": "^5.2.1"
-  }
+  "homepage": "https://github.com/DaihSeven/challenge-machine-turing#readme"
+  
 }
