@@ -78,7 +78,7 @@ Para organizar o desenvolvimento, foi criado um **esquema visual no draw.io**, c
 - Checklist final  
 
 <p align="center">
-  <img src="images/org-maquinaTuring.jpg" alt="Organização do projeto Máquina de Turing"/>
+  <img src="images/org-maquinaTuring.png" alt="Organização do projeto Máquina de Turing"/>
 </p>
 
 ---
@@ -90,3 +90,43 @@ Para organizar o desenvolvimento, foi criado um **esquema visual no draw.io**, c
 - **Pseudocódigo**
 - **Markdown**
 - **Draw.io**
+
+---
+
+## 🧠 Evolução do Algoritmo — Do if/else até a versão final mais próxima da Máquina de Turing
+
+Este projeto não foi desenvolvido diretamente na versão final.
+Ele foi construído de forma incremental, simulando um processo real de evolução de software, passando por:
+
+   - Implementação inicial com if/else: 
+
+      - O algoritmo: Percorre o array de 3 em 3 posições, identifica o operador, executa a operação correspondente, armazena o resultado, simples e funcional mas, baixa escalabilidade, código cresce rapidamente, difícil manutenção e alta repetição de lógica.
+
+   - Refatoração com tabela de regras:
+
+      - Tabela de Regras (Strategy Pattern): Durante feedback de uma entrevista técnica, foi sugerido substituição de estruturas condicionais extensas por uma tabela de operações, mais escalável e reutilizável, logo testei e apliquei neste projeto.
+
+   - Uso de chunks para organização:
+
+      - Após a análise técnica deste projeto foi me sugerido o uso de chunks, até então desconhecido para mim, até relacionar ao simples  `for (i += 3)` já usado. Dividir dados em blocos com organização estrutural, fácil debugging, separação clara de responsabilidades mas, com estruturas intermediárias que consomem mais memória e duplicação de fluxo lógico.
+
+   - Otimização do fluxo (processamento direto):
+
+      - Processamento Direto (Streaming): Processar cada operação no momento da leitura e eliminar estruturas intermediárias, tornando um único loop, assim como na Máquina de Turing.
+
+   - Versão final inspirada no modelo conceitual da Máquina de Turing
+
+---
+## 🎯 Relação com a Máquina de Turing
+
+- 📼 Fita de Entrada: fita contendo símbolos, no projeto => `sequencia_operacoes`
+- 🧭 Cabeça de Leitura: percorre a fita símbolo por símbolo, no código => `for (i += 3)`
+- 🔄 Estados da Máquina: cada operador representa uma regra de transição, no código => `regras[operador]`
+- 🧮 Função de Transição: estado atual + símbolo → nova ação, no código => `operador → função matemática`
+- 📈 Resultado da computação: array de resultados => `const resultados = []; ...  return resultados;`
+---
+## 💬 Conclusão
+
+Mais do que implementar operações matemáticas, o objetivo deste projeto foi demonstrar como conceitos clássicos da ciência da computação podem ser aplicados na prática, conectando teoria e desenvolvimento moderno.
+
+
